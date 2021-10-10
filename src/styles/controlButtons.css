@@ -1,0 +1,19 @@
+.control-btn {
+  padding: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s ease;
+}
+.control-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+}

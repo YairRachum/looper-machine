@@ -1,0 +1,12 @@
+/* Global styles */
+
+body {
+  background: linear-gradient(
+    to right,
+    #009fff,
+    #ec2f4b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+* {
+  box-sizing: border-box;
+}
