@@ -113,7 +113,8 @@ const Layout = () => {
         />
       </div>
       </div>
-      <div className="pads-container">
+      <div className="looper-container">
+      <div className="pads-grid-container">
         {soundsArray.map((sound, index) => (
           <PadBtn
             key={index}
@@ -121,6 +122,7 @@ const Layout = () => {
             onPadClicked={onPadClicked}
           />
         ))}
+      </div>
       </div>
     </div>
   );
