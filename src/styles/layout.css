@@ -7,16 +7,19 @@
 #logo {
   color: white;
 }
-.pads-container {
+.looper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.pads-grid-container {
   display: grid;
   grid-template-rows: 120px 120px 120px;
   grid-template-columns: 120px 120px 120px;
   box-shadow: rgba(255, 255, 255, 1) 0px 5px 15px;
   border-radius: 10px;
   grid-gap: 10px;
-  position: absolute;
-  left: 20%;
-  top: 40%;
   transform: rotate(45deg);
   background-color: white;
   padding: 20px;
@@ -27,8 +30,15 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .pads-container {
-    grid-template-rows: 65px 65px 65px;
-    grid-template-columns: 65px 65px 65px;
+  .pads-grid-container {
+    grid-template-rows: 85px 85px 85px;
+    grid-template-columns: 90px 90px 90px;
+    transform: rotate(0deg);
+  }
+  .looper-container {
+    margin-top: 100px;
+  }
+  .sound-name {
+    transform: rotate(0deg);
   }
 }
